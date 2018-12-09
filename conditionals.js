@@ -1,3 +1,4 @@
+// The If Keyword -------------------------------------------------------------------------------------------------------------------------
 let sale = true 
 sale = false 
 if (sale){
@@ -5,7 +6,7 @@ if (sale){
 } else {
   console.log('Time to wait for a sale.');
 }
-//----------------------------------------------------------------------------------------------------------------------------------
+// If else Statements --------------------------------------------------------------------------------------------------------
 
 let hungerLevel = 7
 if (hungerLevel > 7){
@@ -14,6 +15,8 @@ if (hungerLevel > 7){
 else {
   console.log('We can eat later!')
 }
+
+// Comparison Operators and Logical Operators -------------------------------------------------------------------------------------
 
 let mood = 'sleepy';
 let tirednessLevel = 6;
@@ -24,6 +27,8 @@ if (mood ==='sleepy' && tirednessLevel > 8) {
 else {
   console.log('not bed time yet')
 }
+
+// Truthy and Falsey -------------------------------------------------------------------------------------
 
 let wordCount = 1;
 
@@ -42,14 +47,16 @@ if (favoritePhrase) {
   console.log('This string is definitely empty.');
 }
 
+// Truthy and Falsey Assignment -------------------------------------------------------------------------------------
 
 let tool = 'marker';
 
-// Use short circuit evaluation to assign  writingUtensil variable below:
+// short circuit evaluation 
 let writingUtensil = tool || "pen"
 
 console.log(`The ${writingUtensil} is mightier than the sword.`);
 
+// Ternary Operator -------------------------------------------------------------------------------------
 
 let isLocked = false;
 
@@ -72,6 +79,9 @@ favoritePhrase === "Love That!" ?
 :
   console.log("I don't love that!");
 
+
+// Else If Statements -------------------------------------------------------------------------------------
+
 let season = 'summer';
 
 if (season === 'spring') {
@@ -85,6 +95,9 @@ if (season === 'spring') {
 } else {
   console.log('Invalid season.');
 }
+
+// The Switch Keyword -------------------------------------------------------------------------------------
+
 
 let athleteFinalPosition = 'first place';
 
@@ -102,3 +115,4 @@ switch (athleteFinalPosition) {
     console.log('No medal awarded.')
     break;
 } 
+
