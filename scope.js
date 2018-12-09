@@ -1,3 +1,4 @@
+// Blocks and Scope -----------------------------------------------------------------------------------------------------------------
 const city = 'New York City'
 const logCitySkyline = () => {
   let skyscraper = 'Empire State Building'
@@ -6,7 +7,7 @@ const logCitySkyline = () => {
 
 console.log(logCitySkyline())
 
-//------------------------------------------------------------------------------------------------------------------------------------
+// Global Scope -----------------------------------------------------------------------------------------------------------------------
 
 const satellite = 'The Moon'
 const galaxy = "The Milky Way"
@@ -18,7 +19,7 @@ const callMyNightSky = () =>{
 
 console.log(callMyNightSky())
 
-//------------------------------------------------------------------------------------------------------------------------------------
+// Block Scope --------------------------------------------------------------------------------------------------------------------
 
 const logVisibleLightWaves = () => {
   const lightWaves = 'Moonlight'
@@ -29,7 +30,7 @@ logVisibleLightWaves()
 
 console.log(lightWaves)
 
-//------------------------------------------------------------------------------------------------------------------------------------
+// Scope Pollution ---------------------------------------------------------------------------------------------------------------
 
 const satellite = 'The Moon';
 const galaxy = 'The Milky Way';
@@ -43,12 +44,12 @@ const callMyNightSky = () => {
 console.log(callMyNightSky());
 console.log(stars);
 
-//------------------------------------------------------------------------------------------------------------------------------------
+// Practice Good Scoping --------------------------------------------------------------------------------------------------------------
 
 const logVisibleLightWaves = () => {
   let lightWaves = 'Moonlight';
 	let region = 'The Arctic';
-  // Add if statement here:
+
   if (region === 'The Arctic'){
   	let lightWaves = 'Northern Lights'
   	console.log(lightWaves);  
