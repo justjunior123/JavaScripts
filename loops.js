@@ -1,11 +1,10 @@
-// Loop excercises ---------------------------------------------------------------------------------------------------------------------
+// The For Loop ---------------------------------------------------------------------------------------------------------------------
 
-// Write your code below
 for(let idx = 5; idx <= 10; idx ++){
   console.log(idx)
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+// Looping in Reverse ----------------------------------------------------------------------------------------------------------------
 
 // The loop below loops from 0 to 3.
 for (let counter = 3; counter >= 0; counter--){
@@ -13,14 +12,15 @@ for (let counter = 3; counter >= 0; counter--){
 };
 
 
-//---------------------------------------------------------------------------------------------------------------------
+// Looping Through Arrays ------------------------------------------------------------------------------------------------------
 
 const vacationSpots = ['Bali', 'Paris', 'Tulum'];
 
-// Write your code below
 for (let i = 0; i < vacationSpots.length; i++){
   console.log(`I would like to visit ${vacationSpots[i]}`)
 }
+
+// Nested loops ---------------------------------------------------------------------------------------------------------------------
 
 let bobsFollowers = ['Joe', 'Marta', 'Sam', 'Erin'];
 let tinasFollowers = ['Sam', 'Marta', 'Elle'];
@@ -34,11 +34,10 @@ for (let i = 0; i < bobsFollowers.length; i++) {
   }
 };
 
-//---------------------------------------------------------------------------------------------------------------------
+// The While Loop ---------------------------------------------------------------------------------------------------------------------
 
 
 const cards = ['diamond', 'spade', 'heart', 'club'];
-
 
 let currentCard
 
@@ -47,8 +46,7 @@ while (currentCard !== 'spade'){
   console.log(currentCard)
 }
 
-//---------------------------------------------------------------------------------------------------------------------
-
+// Do While Statements -----------------------------------------------------------------------------------------------------------
 
 let cupsOfSugarNeeded = 2
 let cupsAdded = 0
@@ -56,13 +54,9 @@ let cupsAdded = 0
 do {
   cupsAdded += 1
 } while(cupsAdded < cupsOfSugarNeeded)
-
-
-//---------------------------------------------------------------------------------------------------------------------
+// The Break Keyword ---------------------------------------------------------------------------------------------------------------------
 
 const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
-
-// Write you code below
 
 for(let rapperArrayIndex = 0; rapperArrayIndex < rapperArray.length; rapperArrayIndex++ ){
   if(rapperArray[rapperArrayIndex] === 'Notorious B.I.G.'){
@@ -72,14 +66,4 @@ for(let rapperArrayIndex = 0; rapperArrayIndex < rapperArray.length; rapperArray
   console.log(rapperArray[rapperArrayIndex])
 }
 console.log("And if you don't know, now you know.")
-
-
-//---------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
 
