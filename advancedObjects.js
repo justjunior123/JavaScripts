@@ -1,42 +1,5 @@
-const robot = {
-  model: 'B-4MI',
-  mobile: true,
-  greetMaster() {
-  	console.log(`I'm model ${this.model}, how may I be of service?`);
-  }
-}
 
-const massProdRobot = (model, mobile) => {
-  return {
-    model,
-    mobile,
-    greetMaster() {
-      console.log(`I'm model ${this.model}, how may I be of service?`);
-    }
-  }
-}
-
-const shinyNewRobot = massProdRobot('TrayHax', true)
-
-const chargingStation = {
-  _name: 'Electrons-R-Us',
-  _robotCapacity: 120,
-  _active: true,
-  _chargingRooms: ['Low N Slow', 'Middle of the Road', 'In and Output'],
-
-  set robotCapacity(newCapacity) {
-    if (typeof newCapacity === 'number') {
-      this._robotCapacity = newCapacity;
-    } else {
-      console.log(`Change ${newCapacity} to a number.`)
-    }
-  },
-  get robotCapacity() {
-    return this._robotCapacity;
-  }
-}
-
-// ---------------------------------------------------------------------------------------------------------------------------------
+// The this keyword -------------------------------------------------------------------------------------------------------------------
 
 
 const robot = {
@@ -49,7 +12,8 @@ const robot = {
 
 console.log(robot.provideInfo())
 
-// ---------------------------------------------------------------------------------------------------------------------------------
+// Arrow functions and this --------------------------------------------------------------------------------------------------------------
+
 const robot = {
   energyLevel: 100,
   checkEnergy (){
@@ -58,7 +22,7 @@ const robot = {
 }
 
 robot.checkEnergy();
-// ---------------------------------------------------------------------------------------------------------------------------------
+// Privacy -----------------------------------------------------------------------------------------------------------------------
 
 const robot = {
   _energyLevel: 100,
@@ -72,7 +36,7 @@ robot._energyLevel = 'high'
 
 robot.recharge()
 
-// ---------------------------------------------------------------------------------------------------------------------------------
+// Gettters --------------------------------------------------------------------------------------------------------------------
 
 const robot = {
   _model: '1E78V2',
@@ -88,7 +52,7 @@ const robot = {
 
 console.log(robot.energyLevel)
 
-// ---------------------------------------------------------------------------------------------------------------------------------
+// Setters --------------------------------------------------------------------------------------------------------------------------
 
 
 const robot = {
@@ -115,7 +79,7 @@ robot.numOfSensors = 100
 console.log(robot.numOfSensors)
 
 
-// ---------------------------------------------------------------------------------------------------------------------------------
+// Factory Functions ------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -186,12 +150,12 @@ const robotKeys = Object.keys(robot);
 
 console.log(robotKeys);
 
-// Declare robotEntries below this line:
+// Declare robotEntries 
 const robotEntries = Object.entries(robot)
 
 console.log(robotEntries);
 
-// Declare newRobot below this line:
+// Declare newRobot 
 const newRobot = Object.assign({laserBlaster:true,voiceRecognition:true},robot)
 
 console.log(newRobot);
