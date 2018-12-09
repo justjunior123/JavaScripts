@@ -1,11 +1,11 @@
-// Objects Excercises  ---------------------------------------------------------------------------------------------------------------
+// Creating Object Literals  -----------------------------------------------------------------------------------------------
 
 const fasterShip = {
   'Fuel Type': 'Turbo Fuel',
   color: 'silver'
 };
 
-// ---------------------------------------------------------------------------------------------------------------
+// Accessing propertys ---------------------------------------------------------------------------------------------------------------
 let spaceship = {
   homePlanet: 'Earth',
   color: 'silver',
@@ -17,7 +17,7 @@ let spaceship = {
 const crewCount = spaceship.numCrew
 const planetArray = spaceship.flightPath
 
-// ---------------------------------------------------------------------------------------------------------------
+// Bracket Notation ---------------------------------------------------------------------------------------------------------------
 
 let spaceship = {
   'Fuel Type' : 'Turbo Fuel',
@@ -28,11 +28,10 @@ let spaceship = {
 
 let propName =  'Active Mission';
 
-// Write your code below
 const isActive = spaceship["Active Mission"]
 console.log(spaceship[propName])
 
-// ---------------------------------------------------------------------------------------------------------------
+// Property Assignment ---------------------------------------------------------------------------------------------------------------
 
 let spaceship = {
   'Fuel Type' : 'Turbo Fuel',
@@ -47,11 +46,9 @@ spaceship.numEngines = 4
 
 delete spaceship['Secret Mission']
 
-// ---------------------------------------------------------------------------------------------------------------
+// Methods ---------------------------------------------------------------------------------------------------------------
 
 let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
-
-// Write your code below
 
 let alienShip = {
   retreat() {
@@ -66,7 +63,7 @@ alienShip.retreat();
 
 alienShip.takeOff();
 
-// ---------------------------------------------------------------------------------------------------------------
+// Nested Objects ---------------------------------------------------------------------------------------------------------------
 
 let spaceship = {
   passengers: null,
@@ -104,7 +101,7 @@ const firstPassenger = { name: 'Juan'}
 console.log(firstPassenger)
 spaceship.passengers[0] = firstPassenger
 
-// ---------------------------------------------------------------------------------------------------------------
+// Pass By Reference ---------------------------------------------------------------------------------------------------------------
 
 
 let spaceship = {
@@ -126,7 +123,7 @@ remotelyDisable(spaceship)
 console.log(spaceship)
 
 
-// ---------------------------------------------------------------------------------------------------------------
+// Looping Through Objects ---------------------------------------------------------------------------------------------------------------
 
 let spaceship = {
     crew: {
@@ -151,8 +148,6 @@ let spaceship = {
         }
     }
 }; 
-
-// Write your code below
 
 for (let crewMember in spaceship.crew){
   console.log(`${spaceship.crew[crewMember].name}: ${spaceship.crew[crewMember].degree}`)
